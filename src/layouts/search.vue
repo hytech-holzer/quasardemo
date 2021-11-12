@@ -6,6 +6,7 @@
         <q-route-tab :to="{name: 'profile', params: {id: 1}}" replace label="Walter White" />
         <q-route-tab :to="{name: 'profile', params: {id: 2}}" replace label="Jesse Pinkman" />
         <q-route-tab :to="{name: 'profile', params: {id: 'random'}}" replace label="Random" />
+        <q-route-tab to='/list' replace label="All" />
       </q-tabs>
     </q-header>
 

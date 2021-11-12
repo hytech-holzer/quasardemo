@@ -20,7 +20,7 @@ export default {
   async created() {
     console.log('created.');
     var url = 'https://www.breakingbadapi.com/api/characters/';
-    this.$axios.get(url).then(response => {
+    await this.$axios.get(url).then(response => {
       this.rows = response.data;
     })
 
@@ -36,9 +36,7 @@ export default {
   },
   { name: 'birthday', align: 'left', label: 'Birthday', field: 'birthday', sortable: true },
   { name: 'calories', align: 'left', label: 'Nickname', field: 'nickname', sortable: true }
-  ]
-
-    
+  ];
     console.log(this.rows);
   }, 
   

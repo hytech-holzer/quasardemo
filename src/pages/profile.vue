@@ -9,6 +9,8 @@
         <div class="text-subtitle2">{{character.nickname}}</div>
       </q-card-section>
     </q-card>
+        <q-btn round color="black" icon="my_location" @click="myButtonClicked()" />
+
     </div>
   </q-page>
 </template>
@@ -34,6 +36,11 @@ export default {
     console.log(result);
     this.character = result.data[0];
   }, 
+  methods: {
+    myButtonClicked() {
+      console.log('button clicked.');
+    } 
+  },
   data () {
     return {
       character: ''
